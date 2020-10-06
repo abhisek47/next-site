@@ -1,0 +1,95 @@
+import { useEffect } from 'react';
+import { Layout, Row, Col, Card, Typography } from 'antd';
+import {
+  HomeFilled,
+  BulbFilled,
+  NotificationFilled,
+  SmileFilled,
+} from '@ant-design/icons';
+import CountUp from 'react-countup';
+import sal from 'sal.js';
+
+const StatsComponent = () => {
+  const { Title, Paragraph } = Typography;
+  useEffect(() => {
+    sal();
+  }, []);
+  return (
+    <React.Fragment>
+      <Layout className='statistic'>
+        <Layout.Content>
+          <div className='container'>
+            <Row gutter={16}>
+              <Col className='ant-col-sm-24 ant-col-md-6'>
+                <Card>
+                  <div
+                    data-sal='zoom-in'
+                    data-sal-delay='300'
+                    data-sal-easing='ease-out-back'>
+                    <Title>
+                      <NotificationFilled style={{ color: '#2f54eb' }} />
+                    </Title>
+                    <Paragraph>Company Established</Paragraph>
+                    <Paragraph className='text-light'>
+                      <CountUp duration={5} end={2013} />
+                    </Paragraph>
+                  </div>
+                </Card>
+              </Col>
+              <Col className='ant-col-sm-24 ant-col-md-6'>
+                <Card>
+                  <div
+                    data-sal='zoom-in'
+                    data-sal-delay='300'
+                    data-sal-easing='ease-out-back'>
+                    <Title>
+                      <BulbFilled style={{ color: '#faad14' }} />
+                    </Title>
+                    <Paragraph>Staff Members</Paragraph>
+                    <Paragraph className='text-light'>
+                      <CountUp duration={5} end={80} />
+                    </Paragraph>
+                  </div>
+                </Card>
+              </Col>
+              <Col className='ant-col-sm-24 ant-col-md-6'>
+                <Card>
+                  <div
+                    data-sal='zoom-in'
+                    data-sal-delay='300'
+                    data-sal-easing='ease-out-back'>
+                    <Title>
+                      <HomeFilled style={{ color: '#52c41a' }} />
+                    </Title>
+                    <Paragraph>Offices Available</Paragraph>
+                    <Paragraph className='text-light'>
+                      <CountUp duration={5} end={6} />
+                    </Paragraph>
+                  </div>
+                </Card>
+              </Col>
+              <Col className='ant-col-sm-24 ant-col-md-6'>
+                <Card>
+                  <div
+                    data-sal='zoom-in'
+                    data-sal-delay='300'
+                    data-sal-easing='ease-out-back'>
+                    <Title>
+                      <SmileFilled style={{ color: '#ff7a45' }} />
+                    </Title>
+                    <Paragraph>Happy Clientele</Paragraph>
+                    <Paragraph className='text-light'>
+                      <CountUp duration={5} end={4500} />
+                    </Paragraph>
+                  </div>
+                </Card>
+              </Col>
+            </Row>
+          </div>
+        </Layout.Content>
+      </Layout>
+    </React.Fragment>
+  );
+};
+
+export default StatsComponent;

@@ -15,9 +15,18 @@
     "dayjs": "1.8.28",
     "esm": "^3.2.25",
     "next": "latest",
+    "next-images": "^1.6.0",
+    "next-pwa": "^3.1.5",
+    "next-with-workbox": "^1.2.4",
     "postcss-preset-env": "^6.7.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-countup": "^4.3.3",
+    "react-dom": "^16.13.1",
+    "react-progressive-image-loading": "^3.0.3",
+    "sal.js": "^0.8.1",
+    "workbox-precaching": "^5.1.4",
+    "workbox-window": "^5.1.4",
+    "worker-plugin": "^5.0.0"
   },
   "browser": {
     "fs": false,
