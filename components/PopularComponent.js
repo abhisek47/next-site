@@ -10,7 +10,7 @@ import { TagsFilled } from '@ant-design/icons';
 const PopularComponent = () => {
   const { Meta } = Card;
   return (
-    <React.Fragment>
+    <>
       <Layout>
         <div className='container'>
           <div className='popular-entities'>
@@ -86,7 +86,7 @@ const PopularComponent = () => {
           </div>
         </div>
       </Layout>
-    </React.Fragment>
+    </>
   );
 };
 

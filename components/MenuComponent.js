@@ -24,7 +24,7 @@ const MenuComponent = () => {
           </span>
         }>
         <Menu.Item key='1'>
-          <Link href='/private-limited-company'>Private Limited Company</Link>
+          <Link href='/private-company'>Private Limited Company</Link>
         </Menu.Item>
         <Menu.Item key='2'>
           <Link href='/limited-liability-partnership'>

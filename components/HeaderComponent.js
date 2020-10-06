@@ -20,7 +20,7 @@ const HeaderComponent = () => {
   const { Header } = Layout;
   // const { current } = this.state;
   return (
-    <React.Fragment>
+    <>
       <Layout className='layout'>
         <Header>
           <div className='logo'>
@@ -33,9 +33,7 @@ const HeaderComponent = () => {
               mode='horizontal'>
               <SubMenu title='Company'>
                 <Menu.Item key='setting:1'>
-                  <Link href='/private-limited-company'>
-                    Private Limited Company
-                  </Link>
+                  <Link href='/private-company'>Private Limited Company</Link>
                 </Menu.Item>
                 <Menu.Item key='setting:2'>
                   <Link href='/limited-liability-partnership'>
@@ -43,9 +41,7 @@ const HeaderComponent = () => {
                   </Link>
                 </Menu.Item>
                 <Menu.Item key='setting:3'>
-                  <Link href='/public-limited-company'>
-                    Public Limited Company
-                  </Link>
+                  <Link href='/public-company'>Public Limited Company</Link>
                 </Menu.Item>
                 <Menu.Item key='setting:4'>
                   Proprietorship Firm Registration
@@ -158,7 +154,7 @@ const HeaderComponent = () => {
           </div>
         </Header>
       </Layout>
-    </React.Fragment>
+    </>
   );
 };
 

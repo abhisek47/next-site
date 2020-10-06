@@ -1,5 +1,11 @@
 :root {
-  --backgroundColor: #f7f7f7;
+  --backgroundColor: #fff;
   --primaryColor: #191a1b;
   --textColorSecondary: rgba(0, 0, 0, 0.45);
+  --bg-color: #f2f3fb;
+  --inset: #e5e8f2;
+  --nm: 6px 6px 16px 0 rgba(0, 0, 0, 0.2),
+    -6px -6px 16px 0 rgba(255, 255, 255, 1);
+  --nm-inset: inset 4px 4px 8px 0 rgba(0, 0, 0, 0.2),
+    inset -4px -4px 8px 0 rgba(255, 255, 255, 0.8);
 }

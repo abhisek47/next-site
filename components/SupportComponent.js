@@ -11,7 +11,7 @@ import three from '../assets/three.png';
 const SupportComponent = () => {
   const { Title, Paragraph } = Typography;
   return (
-    <React.Fragment>
+    <>
       <Layout className='support' style={{ background: '#e2f3f5' }}>
         <div className='container'>
           <Row gutter={16}>
@@ -84,7 +84,7 @@ const SupportComponent = () => {
           </Row>
         </div>
       </Layout>
-    </React.Fragment>
+    </>
   );
 };
 

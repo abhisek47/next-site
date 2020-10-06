@@ -38,7 +38,7 @@ const FooterComponent = () => {
   const { Footer } = Layout;
   const { Paragraph } = Typography;
   return (
-    <React.Fragment>
+    <>
       <Layout className='footer'>
         <div className='container'>
           <Footer className='footer-top'>
@@ -70,7 +70,7 @@ const FooterComponent = () => {
           </Typography>
         </Footer>
       </Layout>
-    </React.Fragment>
+    </>
   );
 };
 

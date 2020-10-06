@@ -5,7 +5,7 @@ import director from '../assets/chief@2x.png';
 const QuotesComponent = () => {
   const { Title, Paragraph, Text } = Typography;
   return (
-    <React.Fragment>
+    <>
       <Layout className='quotes'>
         <div className='container'>
           <Row gutter={16} align='middle'>
@@ -53,7 +53,7 @@ const QuotesComponent = () => {
           </Row>
         </div>
       </Layout>
-    </React.Fragment>
+    </>
   );
 };
 

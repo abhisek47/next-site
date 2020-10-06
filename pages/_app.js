@@ -1,14 +1,19 @@
-import { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import 'antd/dist/antd.css';
 import '../styles/vars.css';
 import '../styles/global.css';
 import '../node_modules/sal.js/dist/sal.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import HeaderComponent from '../components/HeaderComponent';
 import FooterComponent from '../components/FooterComponent';
 import Head from 'next/head';
 import sal from 'sal.js';
 
+export const LoginContext = React.createContext(false);
+
 export default function MyApp({ Component, pageProps }) {
+  const [login, setLogin] = useState(false);
   useEffect(() => {
     sal();
   }, []);
@@ -53,7 +58,9 @@ export default function MyApp({ Component, pageProps }) {
         <meta name='theme-color' content='#317EFB' />
       </Head>
       <HeaderComponent />
-      <Component {...pageProps} />
+      <LoginContext.Provider value={[login, setLogin]}>
+        <Component {...pageProps} />
+      </LoginContext.Provider>
       <FooterComponent />
     </>
   );

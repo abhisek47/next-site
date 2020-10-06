@@ -334,8 +334,11 @@ img {
 }
 
 .statistic .ant-card {
-  background: none;
   border: none;
+  border-radius: 30px;
+  background: #ffffff;
+  /* box-shadow: 15px 15px 30px #f0f0f0, -15px -15px 30px #ffffff; */
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
 }
 
 .statistic .text-light {
@@ -709,6 +712,11 @@ button:active {
 .price:hover,
 .service-card:hover {
   transform: translateY(-10px);
+}
+
+.ant-typography strong {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 1220px) {

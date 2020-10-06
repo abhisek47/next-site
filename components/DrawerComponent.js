@@ -12,7 +12,7 @@ const DrawerComponent = () => {
     setVisible(false);
   };
   return (
-    <React.Fragment>
+    <>
       <Button className='menu-btn' type='primary' onClick={showDrawer}>
         <MenuOutlined />
       </Button>
@@ -24,7 +24,7 @@ const DrawerComponent = () => {
         visible={visible}>
         <MenuComponent />
       </Drawer>
-    </React.Fragment>
+    </>
   );
 };
 

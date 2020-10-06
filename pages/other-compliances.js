@@ -1,0 +1,29 @@
+import model from '../assets/model_30.jpg';
+import BreadcrumbComponent from '../components/BreadcrumbComponent';
+import ServiceBannerComponent from '../components/ServiceBanner';
+import OtherCompliancesComponent from '../components/OtherCompliancesComponent';
+
+const PrivateCompliancesPage = () => {
+  const services = [
+    'Required Timing - 20 days',
+    'Completely Online – No need to visit office',
+    'CA Assisted Partnership Compliances for all your partnership firm needs',
+  ];
+  return (
+    <>
+      <ServiceBannerComponent
+        head='Compliances For Partnership Firm, Society, Trust, NGO'
+        btn='Register now'
+        img={model}
+        tagline='Get your Annual Compliances registered under Partnership Firm @₹ 23,600/-'
+        services={services}
+      />
+      <div className='container'>
+        <BreadcrumbComponent title='Compliances For Partnership Firm, Society, Trust, NGO' />
+        <OtherCompliancesComponent />
+      </div>
+    </>
+  );
+};
+
+export default PrivateCompliancesPage;
