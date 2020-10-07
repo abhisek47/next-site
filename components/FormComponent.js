@@ -25,7 +25,7 @@ const FormComponent = ({ tagline, id }) => {
   return (
     <>
       <div className='login-form'>
-        <Card style={{ fontFamily: 'Source Sans Pro' }}>
+        <Card>
           <Typography>
             <Title level={4}>{tagline}</Title>
           </Typography>

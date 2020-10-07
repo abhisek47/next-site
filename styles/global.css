@@ -6,6 +6,10 @@
   box-sizing: inherit;
 }
 
+a {
+  color: inherit;
+}
+
 html {
   box-sizing: border-box;
   font-size: 14px;
