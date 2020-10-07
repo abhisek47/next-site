@@ -10,6 +10,7 @@ import FooterComponent from '../components/FooterComponent';
 import Head from 'next/head';
 import sal from 'sal.js';
 import Router from 'next/router';
+import ScrollToTop from '../components/ScrollToTop';
 
 export const LoginContext = React.createContext(false);
 
@@ -60,6 +61,7 @@ export default function MyApp({ Component, pageProps }) {
         <meta name='theme-color' content='#317EFB' />
       </Head>
       <HeaderComponent />
+      <ScrollToTop />
       <LoginContext.Provider value={[login, setLogin]}>
         <Component {...pageProps} />
       </LoginContext.Provider>
