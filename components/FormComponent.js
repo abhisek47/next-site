@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react';
 import { Form, Input, Button, Card, Typography, Space } from 'antd';
 import { MailOutlined, PhoneOutlined } from '@ant-design/icons';
-import { useHistory } from 'react-router-dom';
 import { LoginContext } from '../pages/_app';
+import Router from 'next/router';
 // import db from '../firebase';
 // import firebase from 'firebase';
 
@@ -10,7 +10,6 @@ const FormComponent = ({ tagline, id }) => {
   const [login, setLogin] = useContext(LoginContext);
   const [email, setEmail] = useState([]);
   const [phone, setPhone] = useState([]);
-  const history = useHistory();
   const onFinish = (values) => {
     console.log('Received values of form: ', values);
     setLogin(true);
@@ -19,7 +18,7 @@ const FormComponent = ({ tagline, id }) => {
     //   phone: phone,
     //   timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     // });
-    history.push(`/${id}-application-form`);
+    Router.push(`/${id}-application-form`);
   };
   const { Title } = Typography;
   return (

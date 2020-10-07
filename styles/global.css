@@ -393,7 +393,7 @@ img {
 }
 
 .support img {
-  width: 30%;
+  width: 25%;
 }
 
 .support .support-team {
@@ -727,6 +727,10 @@ button:active {
   font-weight: 400;
 }
 
+.application-form .ant-form-item-label > label {
+  font-size: 16px;
+}
+
 @media screen and (max-width: 1220px) {
   .navbar {
     display: none;
@@ -776,6 +780,9 @@ button:active {
   }
   .hide {
     display: none;
+  }
+  .support img {
+    width: 30%;
   }
 }
 

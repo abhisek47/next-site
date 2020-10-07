@@ -9,6 +9,7 @@ import HeaderComponent from '../components/HeaderComponent';
 import FooterComponent from '../components/FooterComponent';
 import Head from 'next/head';
 import sal from 'sal.js';
+import Router from 'next/router';
 
 export const LoginContext = React.createContext(false);
 
@@ -16,6 +17,7 @@ export default function MyApp({ Component, pageProps }) {
   const [login, setLogin] = useState(false);
   useEffect(() => {
     sal();
+    login ? Router.push('/gst-appication-form') : Router.push('/');
   }, []);
   return (
     <>

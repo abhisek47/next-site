@@ -43,7 +43,7 @@ const PopularComponent = () => {
                       title='Company Registration'
                       description='A company register is a register of organizations in the jurisdiction they operate under.'
                     />
-                    <Link href='/private-limited-company'>
+                    <Link href='/private-company'>
                       <Button icon={<TagsFilled />} type='primary'>
                         Buy now
                       </Button>
