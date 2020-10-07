@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Layout, Typography, Row, Col } from 'antd';
 import ProgressiveImage from 'react-progressive-image-loading';
 const BannerComponent = ({ head, para, btn, img, goTo }) => {
@@ -27,13 +26,6 @@ const BannerComponent = ({ head, para, btn, img, goTo }) => {
                       data-sal-easing='ease-out-back'>
                       {para}
                     </Text>
-                    {/* <div className='get-btn'>
-                      <Link to='/login'>
-                        <Button size='large' type='primary'>
-                          {btn}
-                        </Button>
-                      </Link>
-                    </div> */}
                   </div>
                 </Typography>
               </Col>

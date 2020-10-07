@@ -11,7 +11,7 @@ const GstPage = () => {
     'CA Assisted GST Filing for all your GST needs',
   ];
   return (
-    <React.Fragment>
+    <>
       <ServiceBannerComponent
         head='GST Registration Online'
         btn='Register now'
@@ -24,7 +24,7 @@ const GstPage = () => {
         <BreadcrumbComponent title='GST Registration' />
         <GstComponent />
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

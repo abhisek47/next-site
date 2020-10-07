@@ -1,3 +1,4 @@
+import React from 'react';
 import model from '../assets/model_6.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import TrademarkComponent from '../components/TrademarkComponent';

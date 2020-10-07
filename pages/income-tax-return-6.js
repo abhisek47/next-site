@@ -12,7 +12,6 @@ const ItrSixPage = () => {
   ];
   return (
     <>
-      <HeaderComponent />
       <ServiceBannerComponent
         head='Income Tax Return - 6'
         btn='Register now'
