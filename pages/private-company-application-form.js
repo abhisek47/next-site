@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import CompanyComponent from '../application-form/privateCompany/CompanyComponent';
 import DirectorComponent from '../application-form/privateCompany/DirectorComponent';
 import BusinessComponent from '../application-form/privateCompany/BusinessComponent';
-import PaymentComponent from '../application-form/privateCompany/PaymentComponent';
 
 class PrivateUserForm extends Component {
   state = {
