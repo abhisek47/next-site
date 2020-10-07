@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Form, Typography, Button, Row, Col, Space, Radio } from 'antd';
+import HeaderComponent from '../../components/HeaderComponent';
 
 class BusinessComponent extends Component {
   onFinish = (values) => {
@@ -24,6 +25,7 @@ class BusinessComponent extends Component {
     const { Title, Paragraph } = Typography;
     return (
       <>
+        <HeaderComponent />
         <div className='container application-form'>
           <Title className='application-title'>{title}</Title>
           <Paragraph strong>{para}</Paragraph>

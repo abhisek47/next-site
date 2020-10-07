@@ -1,5 +1,7 @@
+import React from 'react';
 import model from '../assets/model_12.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
+import HeaderComponent from '../components/HeaderComponent';
 import PfComponent from '../components/PfComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
 
@@ -11,7 +13,8 @@ const PfPage = () => {
     'Cloud backup for 10 years',
   ];
   return (
-    <>
+    <React.Fragment>
+      <HeaderComponent />
       <ServiceBannerComponent
         head='Provident Fund Registration'
         btn='Register now'
@@ -23,7 +26,7 @@ const PfPage = () => {
         <BreadcrumbComponent title='Provident Fund' />
         <PfComponent />
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

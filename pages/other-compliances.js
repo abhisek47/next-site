@@ -2,6 +2,7 @@ import model from '../assets/model_30.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
 import OtherCompliancesComponent from '../components/OtherCompliancesComponent';
+import HeaderComponent from '../components/HeaderComponent';
 
 const PrivateCompliancesPage = () => {
   const services = [
@@ -10,7 +11,8 @@ const PrivateCompliancesPage = () => {
     'CA Assisted Partnership Compliances for all your partnership firm needs',
   ];
   return (
-    <>
+    <React.Fragment>
+      <HeaderComponent />
       <ServiceBannerComponent
         head='Compliances For Partnership Firm, Society, Trust, NGO'
         btn='Register now'
@@ -22,7 +24,7 @@ const PrivateCompliancesPage = () => {
         <BreadcrumbComponent title='Compliances For Partnership Firm, Society, Trust, NGO' />
         <OtherCompliancesComponent />
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

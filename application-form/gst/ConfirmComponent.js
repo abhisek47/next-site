@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { Typography, Button, Result } from 'antd';
+import HeaderComponent from '../../components/HeaderComponent';
 
 class ConfirmComponent extends Component {
   render() {
     return (
       <>
+        <HeaderComponent />
         <div className='container application-form'>
           <Typography.Title className='application-title'>
             GST Application Form

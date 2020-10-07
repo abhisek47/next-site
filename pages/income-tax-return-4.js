@@ -2,6 +2,7 @@ import model from '../assets/model_8.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
 import ItrFourComponent from '../components/ItrFourComponent';
+import HeaderComponent from '../components/HeaderComponent';
 
 const ItrFourPage = () => {
   const services = [
@@ -11,7 +12,8 @@ const ItrFourPage = () => {
     'CA Assisted ITR Filing for all your income tax needs',
   ];
   return (
-    <>
+    <React.Fragment>
+      <HeaderComponent />
       <ServiceBannerComponent
         head='Income Tax Return - 4'
         btn='Register now'
@@ -24,7 +26,7 @@ const ItrFourPage = () => {
         <BreadcrumbComponent title='Income Tax Return - 4' />
         <ItrFourComponent />
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

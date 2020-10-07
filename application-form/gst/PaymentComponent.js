@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Typography, Button, Descriptions, Space, Form } from 'antd';
+import HeaderComponent from '../../components/HeaderComponent';
 
 class PaymentComponent extends Component {
   continue = (e) => {
@@ -31,6 +32,7 @@ class PaymentComponent extends Component {
     } = this.props;
     return (
       <>
+        <HeaderComponent />
         <div className='container application-form'>
           <Typography.Title className='application-title'>
             GST Application Form

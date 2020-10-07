@@ -2,6 +2,7 @@ import model from '../assets/model_25.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import TdsComponent from '../components/TdsComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
+import HeaderComponent from '../components/HeaderComponent';
 
 const TdsPage = () => {
   const services = [
@@ -10,7 +11,8 @@ const TdsPage = () => {
     'CA Assisted Trademark Filing for all your Tax needs',
   ];
   return (
-    <>
+    <React.Fragment>
+      <HeaderComponent />
       <ServiceBannerComponent
         head='Tax Deduction at Source'
         btn='Register now'
@@ -23,7 +25,7 @@ const TdsPage = () => {
         <BreadcrumbComponent title='Tax Deduction at Source' />
         <TdsComponent />
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

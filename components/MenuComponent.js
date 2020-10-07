@@ -8,6 +8,7 @@ import {
   CompassOutlined,
   PieChartOutlined,
 } from '@ant-design/icons';
+import Link from 'next/link';
 
 const { SubMenu } = Menu;
 
@@ -23,15 +24,15 @@ const MenuComponent = () => {
           </span>
         }>
         <Menu.Item key='1'>
-          <a href='/private-company'>Private Limited Company</a>
+          <Link href='/private-company'>Private Limited Company</Link>
         </Menu.Item>
         <Menu.Item key='2'>
-          <a href='/limited-liability-partnership'>
+          <Link href='/limited-liability-partnership'>
             Limited Liability Partnership
-          </a>
+          </Link>
         </Menu.Item>
         <Menu.Item key='3'>
-          <a href='/public-limited-company'>Public Limited Company</a>
+          <Link href='/public-limited-company'>Public Limited Company</Link>
         </Menu.Item>
         <Menu.Item key='4'>Proprietorship Firm Registration</Menu.Item>
         <Menu.Item key='5'>Registered Partnership</Menu.Item>
@@ -42,85 +43,95 @@ const MenuComponent = () => {
         icon={<AppstoreOutlined />}
         title='Intellectual Property'>
         <Menu.Item key='7'>
-          <a href='/trademark'>Trademark Registration</a>
+          <Link href='/trademark'>Trademark Registration</Link>
         </Menu.Item>
         <Menu.Item key='8'>
-          <a href='/trademark-renewal'>Trademark Renewal</a>
+          <Link href='/trademark-renewal'>Trademark Renewal</Link>
         </Menu.Item>
         <Menu.Item key='9'>Copyright Registration</Menu.Item>
       </SubMenu>
-      <SubMenu title='Goods and Services Tax' icon={<PieChartOutlined />}>
+      <SubMenu
+        key='sub3'
+        title='Goods and Services Tax'
+        icon={<PieChartOutlined />}>
         <Menu.Item key='10'>
-          <a href='/gst'>GST Registration</a>
+          <Link href='/gst'>GST Registration</Link>
         </Menu.Item>
         <Menu.Item key='11'>
-          <a href='/gst-return'>GST Return Filing</a>
+          <Link href='/gst-return'>GST Return Filing</Link>
         </Menu.Item>
       </SubMenu>
-      <SubMenu key='sub3' icon={<SettingOutlined />} title='Income Tax'>
+      <SubMenu key='sub4' icon={<SettingOutlined />} title='Income Tax'>
         <Menu.Item key='12'>
-          <a href='/income-tax-return-1'>Income Tax Return - 1</a>
+          <Link href='/income-tax-return-1'>Income Tax Return - 1</Link>
         </Menu.Item>
         <Menu.Item key='13'>
-          <a href='/income-tax-return-2'>Income Tax Return - 2</a>
+          <Link href='/income-tax-return-2'>Income Tax Return - 2</Link>
         </Menu.Item>
         <Menu.Item key='14'>
-          <a href='/income-tax-return-3'>Income Tax Return - 3</a>
+          <Link href='/income-tax-return-3'>Income Tax Return - 3</Link>
         </Menu.Item>
         <Menu.Item key='15'>
-          <a href='/income-tax-return-4'>Income Tax Return - 4</a>
+          <Link href='/income-tax-return-4'>Income Tax Return - 4</Link>
         </Menu.Item>
         <Menu.Item key='16'>
-          <a href='/income-tax-return-5'>Income Tax Return - 5</a>
+          <Link href='/income-tax-return-5'>Income Tax Return - 5</Link>
         </Menu.Item>
         <Menu.Item key='17'>
-          <a href='/income-tax-return-6'>Income Tax Return - 6</a>
+          <Link href='/income-tax-return-6'>Income Tax Return - 6</Link>
         </Menu.Item>
         <Menu.Item key='18'>
-          <a href='/income-tax-return-7'>Income Tax Return - 7</a>
+          <Link href='/income-tax-return-7'>Income Tax Return - 7</Link>
         </Menu.Item>
       </SubMenu>
       <SubMenu
-        key='sub4'
+        key='sub5'
         icon={<DatabaseOutlined />}
         title='Annual Compliances'>
         <Menu.Item key='19'>
-          <a href='/private-company-compliances'>Private Limited Company</a>
+          <Link href='/private-company-compliances'>
+            Private Limited Company
+          </Link>
         </Menu.Item>
         <Menu.Item key='20'>
-          <a href='/limited-partnership-compliances'>LLP Annual Partnership</a>
+          <Link href='/limited-partnership-compliances'>
+            LLP Annual Partnership
+          </Link>
         </Menu.Item>
         <Menu.Item key='21'>
-          <a href='/other-compliances'>Partnership Firm, Society, Trust, NGO</a>
+          <Link href='/other-compliances'>
+            Partnership Firm, Society, Trust, NGO
+          </Link>
         </Menu.Item>
         <Menu.Item key='22'>
-          <a href='/import-export-code'>Import Export Code</a>
+          <Link href='/import-export-code'>Import Export Code</Link>
         </Menu.Item>
         <Menu.Item key='23'>
-          <a href='/iso'>ISO Registration</a>
+          <Link href='/iso'>ISO Registration</Link>
         </Menu.Item>
       </SubMenu>
-      <SubMenu key='sub5' icon={<CompassOutlined />} title='Payroll'>
+      <SubMenu key='sub6' icon={<CompassOutlined />} title='Payroll'>
         <Menu.Item key='24'>
-          <a href='/provident-fund'>PF Registration</a>
+          <Link href='/provident-fund'>PF Registration</Link>
         </Menu.Item>
         <Menu.Item key='25'>
-          <a href='/provident-fund-return'>PF Return Filing</a>
+          <Link href='/provident-fund-return'>PF Return Filing</Link>
         </Menu.Item>
         <Menu.Item key='26'>
-          <a href='/employees-state-insurance'></a>
-          ESI Registration
+          <Link href='/employees-state-insurance'>ESI Registration</Link>
         </Menu.Item>
         <Menu.Item key='27'>
-          <a href='/employees-state-insurance-return'>ESI Return Filing</a>
+          <Link href='/employees-state-insurance-return'>
+            ESI Return Filing
+          </Link>
         </Menu.Item>
       </SubMenu>
-      <SubMenu key='sub6' icon={<AppstoreAddOutlined />} title='Others'>
+      <SubMenu key='sub7' icon={<AppstoreAddOutlined />} title='Others'>
         <Menu.Item key='28'>PAN Application</Menu.Item>
         <Menu.Item key='29'>TAN Application</Menu.Item>
         <Menu.Item key='30'>80G Registration</Menu.Item>
         <Menu.Item key='31'>
-          <a href='/tax-deduction-at-source'>TDS Filing</a>
+          <Link href='/tax-deduction-at-source'>TDS Filing</Link>
         </Menu.Item>
         <Menu.Item key='32'>Excise Return Filing</Menu.Item>
       </SubMenu>

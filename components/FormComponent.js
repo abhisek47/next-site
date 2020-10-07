@@ -68,7 +68,6 @@ const FormComponent = ({ tagline, id }) => {
                 placeholder='Phone number'
               />
             </Form.Item>
-
             <Form.Item style={{ margin: 0 }}>
               <Button
                 type='primary'

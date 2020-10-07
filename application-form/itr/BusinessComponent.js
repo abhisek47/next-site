@@ -15,7 +15,7 @@ import {
   DownloadOutlined,
   CheckCircleFilled,
 } from '@ant-design/icons';
-import Link from 'next/link';
+import HeaderComponent from '../../components/HeaderComponent';
 // import ItrForm from '../../assets/ITR-1-Form-2019to2020.pdf';
 
 class BusinessComponent extends Component {
@@ -47,6 +47,7 @@ class BusinessComponent extends Component {
     const { Title, Paragraph, Text } = Typography;
     return (
       <>
+        <HeaderComponent />
         <div className='container application-form'>
           <Title className='application-title'>{title}</Title>
           <Paragraph strong>{para}</Paragraph>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Form, Input, Typography, Button, Row, Col, Space } from 'antd';
 import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons';
+import HeaderComponent from '../../components/HeaderComponent';
 
 class PartnerComponent extends Component {
   onFinish = (values) => {
@@ -20,6 +21,7 @@ class PartnerComponent extends Component {
     const { Title, Paragraph } = Typography;
     return (
       <>
+        <HeaderComponent />
         <div className='container application-form'>
           <Title className='application-title'>{title}</Title>
           <Paragraph strong>{para}</Paragraph>

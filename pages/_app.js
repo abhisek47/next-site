@@ -14,7 +14,7 @@ import ScrollToTop from '../components/ScrollToTop';
 
 export const LoginContext = React.createContext(false);
 
-export default function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps, children }) {
   const [login, setLogin] = useState(false);
   useEffect(() => {
     sal();
@@ -60,12 +60,12 @@ export default function MyApp({ Component, pageProps }) {
         <link rel='apple-touch-icon' href='/apple-touch-icon.png'></link>
         <meta name='theme-color' content='#317EFB' />
       </Head>
-      <HeaderComponent />
-      <ScrollToTop />
       <LoginContext.Provider value={[login, setLogin]}>
+        <ScrollToTop />
         <Component {...pageProps} />
+        {children}
+        <FooterComponent />
       </LoginContext.Provider>
-      <FooterComponent />
     </>
   );
 }

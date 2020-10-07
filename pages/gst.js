@@ -2,6 +2,7 @@ import model from '../assets/model_1.jpg';
 import GstComponent from '../components/GstComponent';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
+import HeaderComponent from '../components/HeaderComponent';
 
 const GstPage = () => {
   const services = [
@@ -11,7 +12,8 @@ const GstPage = () => {
     'CA Assisted GST Filing for all your GST needs',
   ];
   return (
-    <>
+    <React.Fragment>
+      <HeaderComponent />
       <ServiceBannerComponent
         head='GST Registration Online'
         btn='Register now'
@@ -24,7 +26,7 @@ const GstPage = () => {
         <BreadcrumbComponent title='GST Registration' />
         <GstComponent />
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

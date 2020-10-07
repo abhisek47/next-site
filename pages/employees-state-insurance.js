@@ -1,6 +1,7 @@
 import model from '../assets/model_13.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import EsiComponent from '../components/EsiComponent';
+import HeaderComponent from '../components/HeaderComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
 
 const EsiPage = () => {
@@ -11,7 +12,8 @@ const EsiPage = () => {
     'CA Assisted ESI filing for all your ESI needs',
   ];
   return (
-    <>
+    <React.Fragment>
+      <HeaderComponent />
       <ServiceBannerComponent
         head='ESI Registration'
         btn='Register now'
@@ -24,7 +26,7 @@ const EsiPage = () => {
         <BreadcrumbComponent title='Employees State Insurance' />
         <EsiComponent />
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

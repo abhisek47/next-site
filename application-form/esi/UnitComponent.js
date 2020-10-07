@@ -10,6 +10,7 @@ import {
   Upload,
 } from 'antd';
 import { InboxOutlined } from '@ant-design/icons';
+import HeaderComponent from '../../components/HeaderComponent';
 
 class UnitComponent extends Component {
   onFinish = (values) => {
@@ -36,6 +37,7 @@ class UnitComponent extends Component {
     const { Title, Paragraph } = Typography;
     return (
       <>
+        <HeaderComponent />
         <div className='container application-form'>
           <Title className='application-title'>{title}</Title>
           <Paragraph strong>{para}</Paragraph>

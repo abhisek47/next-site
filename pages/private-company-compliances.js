@@ -2,6 +2,7 @@ import model from '../assets/model_18.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
 import PrivateCompliancesComponent from '../components/PrivateCompliancesComponent';
+import HeaderComponent from '../components/HeaderComponent';
 
 const PrivateCompliancesPage = () => {
   const services = [
@@ -10,7 +11,8 @@ const PrivateCompliancesPage = () => {
     'CA Assisted Company Compliances for all your company needs',
   ];
   return (
-    <>
+    <React.Fragment>
+      <HeaderComponent />
       <ServiceBannerComponent
         head='Compliances For Private Company'
         btn='Register now'
@@ -22,7 +24,7 @@ const PrivateCompliancesPage = () => {
         <BreadcrumbComponent title='Compliances For Private Company' />
         <PrivateCompliancesComponent />
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

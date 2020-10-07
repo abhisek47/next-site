@@ -2,6 +2,7 @@ import model from '../assets/model_16.jpg';
 import ServiceBannerComponent from '../components/ServiceBanner';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import PrivateComponent from '../components/PrivateComponent';
+import HeaderComponent from '../components/HeaderComponent';
 
 const PrivatePage = () => {
   const services = [
@@ -10,7 +11,8 @@ const PrivatePage = () => {
     'CA Assisted Company Filing for all your Company needs',
   ];
   return (
-    <>
+    <React.Fragment>
+      <HeaderComponent />
       <ServiceBannerComponent
         head='Private Limited Company'
         btn='Register now'
@@ -23,7 +25,7 @@ const PrivatePage = () => {
         <BreadcrumbComponent title='Private Limited Company' />
         <PrivateComponent />
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

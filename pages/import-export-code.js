@@ -2,6 +2,7 @@ import model from '../assets/model_20.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
 import ImportExportComponent from '../components/ImportExportComponent';
+import HeaderComponent from '../components/HeaderComponent';
 
 const ImportExportPage = () => {
   const services = [
@@ -11,7 +12,8 @@ const ImportExportPage = () => {
     'CA Assisted Import Export Filing for all your import export needs',
   ];
   return (
-    <>
+    <React.Fragment>
+      <HeaderComponent />
       <ServiceBannerComponent
         head='Import Export Code Registration'
         btn='Register now'
@@ -23,7 +25,7 @@ const ImportExportPage = () => {
         <BreadcrumbComponent title='Import Export Code' />
         <ImportExportComponent />
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

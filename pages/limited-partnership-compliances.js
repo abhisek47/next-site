@@ -2,6 +2,7 @@ import model from '../assets/model_19.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
 import LlpCompliancesComponent from '../components/LlpCompliancesComponent';
+import HeaderComponent from '../components/HeaderComponent';
 
 const PrivateCompliancesPage = () => {
   const services = [
@@ -10,7 +11,8 @@ const PrivateCompliancesPage = () => {
     'CA Assisted LLP Compliances for all your LLP needs',
   ];
   return (
-    <>
+    <React.Fragment>
+      <HeaderComponent />
       <ServiceBannerComponent
         head='Compliances For Limited Liability Partnership'
         btn='Register now'
@@ -22,7 +24,7 @@ const PrivateCompliancesPage = () => {
         <BreadcrumbComponent title='Compliances For Limited Liability Partnership' />
         <LlpCompliancesComponent />
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

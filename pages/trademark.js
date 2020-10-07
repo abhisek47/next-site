@@ -3,6 +3,7 @@ import model from '../assets/model_6.jpg';
 import BreadcrumbComponent from '../components/BreadcrumbComponent';
 import TrademarkComponent from '../components/TrademarkComponent';
 import ServiceBannerComponent from '../components/ServiceBanner';
+import HeaderComponent from '../components/HeaderComponent';
 
 const ItrThreePage = () => {
   const services = [
@@ -11,7 +12,8 @@ const ItrThreePage = () => {
     'CA Assisted Trademark Filing for all your Trademark needs',
   ];
   return (
-    <>
+    <React.Fragment>
+      <HeaderComponent />
       <ServiceBannerComponent
         head='Trademark Registration'
         btn='Register now'
@@ -24,7 +26,7 @@ const ItrThreePage = () => {
         <BreadcrumbComponent title='Trademark' />
         <TrademarkComponent />
       </div>
-    </>
+    </React.Fragment>
   );
 };
 
