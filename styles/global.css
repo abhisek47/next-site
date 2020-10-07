@@ -17,7 +17,8 @@ html {
 }
 
 body {
-  background-color: var(--backgroundColor);
+  /* background-color: var(--backgroundColor); */
+  background-color: ghostwhite;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -334,13 +335,16 @@ img {
 .statistic {
   width: 100%;
   padding: 24px 0;
-  /* background-color: ghostwhite; */
+  background-color: ghostwhite;
 }
 
 .statistic .ant-card {
   border: none;
   border-radius: 30px;
-  background: #ffffff;
+  background: linear-gradient(
+    hsla(0, 0%, 100%, 0.5),
+    hsla(0, 0%, 100%, 0.8) 80%
+  );
   /* box-shadow: 15px 15px 30px #f0f0f0, -15px -15px 30px #ffffff; */
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
 }
@@ -389,7 +393,7 @@ img {
 }
 
 .support img {
-  width: 20%;
+  width: 30%;
 }
 
 .support .support-team {

@@ -16,7 +16,7 @@ const IsoPage = () => {
         head='ISO Registration'
         btn='Register now'
         img={model}
-        tagline='Get your ISO registered @₹ 6,000 excluding GST'
+        tagline='Get your ISO registered @₹ 6,000/-'
         services={services}
       />
       <div className='container'>

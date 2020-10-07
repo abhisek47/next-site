@@ -19,7 +19,7 @@ const StatsComponent = () => {
       <Layout className='statistic'>
         <Layout.Content>
           <div className='container'>
-            <Row gutter={16}>
+            <Row gutter={16} align='top'>
               <Col className='ant-col-xs-12 ant-col-md-6'>
                 <Card
                   data-sal='zoom-in'
