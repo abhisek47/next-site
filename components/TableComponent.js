@@ -7,6 +7,7 @@ const TableComponent = ({ title, para, data, columns }) => {
       <Title>{title}</Title>
       <Paragraph strong>{para}</Paragraph>
       <Table
+        style={{ width: '100%' }}
         columns={columns}
         dataSource={data}
         bordered

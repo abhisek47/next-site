@@ -233,13 +233,13 @@ const TdsComponent = () => {
                 </Row>
               </div>
               {/* tds rates */}
-              <div className='tds-rates service' id='tds-rates'>
+              {/* <div className='tds-rates service' id='tds-rates'>
                 <TableComponent
                   title='What are the different types of GST Returns?'
                   columns={columns}
                   data={data}
                 />
-              </div>
+              </div> */}
               {/* Pricing info */}
               <div className='pricing service' id='tds-pricing'>
                 <PricingComponent
