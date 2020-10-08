@@ -15,6 +15,7 @@
     "cross-env": "^7.0.2",
     "dayjs": "1.8.28",
     "esm": "^3.2.25",
+    "firebase": "^7.22.1",
     "next": "latest",
     "next-images": "^1.6.0",
     "next-pwa": "^3.1.5",

@@ -6,6 +6,7 @@ import PopularComponent from '../components/PopularComponent';
 import QuotesComponent from '../components/QuotesComponent';
 import SupportComponent from '../components/SupportComponent';
 import HeaderComponent from '../components/HeaderComponent';
+import FaqComponent from '../components/FaqComponent';
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
       <PopularComponent />
       <QuotesComponent />
       <SupportComponent />
+      <FaqComponent />
     </React.Fragment>
   );
 };
