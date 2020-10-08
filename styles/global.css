@@ -731,7 +731,7 @@ button:active {
 .application-form .ant-form-item-label > label {
   font-size: 16px;
 }
-
+/* 
 .ant-btn {
   border-radius: 30px;
   height: initial;
@@ -739,7 +739,7 @@ button:active {
 
 .ant-btn-primary {
   padding: 0.5rem 1.5rem;
-}
+} */
 
 .ant-anchor-wrapper {
   background: none;
