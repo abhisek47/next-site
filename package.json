@@ -37,5 +37,8 @@
     "fs": false,
     "path": false
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "globby": "^11.0.1"
+  }
 }
