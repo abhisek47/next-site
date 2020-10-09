@@ -23,7 +23,7 @@ export default function MyApp({ Component, pageProps, children }) {
   return (
     <>
       <Head>
-        <meta charset='utf-8' />
+        <meta charSet='utf-8' />
         <meta
           name='viewport'
           content='width=device-width, initial-scale=1, shrink-to-fit=no'
@@ -84,15 +84,15 @@ export default function MyApp({ Component, pageProps, children }) {
         <meta name='image' content='https://clientfilingindia.com/cover.jpg' />
         {/* Schema.org for Google */}
         <meta
-          itemprop='name'
+          itemProp='name'
           content='ClientFilingIndia | Business Consultants in Kolkata'
         />
         <meta
-          itemprop='description'
+          itemProp='description'
           content='We have over 8+ years of corporate and consulting experience with top firms including experienced Chartered Accountants, Company Secretaries, Lawyers.'
         />
         <meta
-          itemprop='image'
+          itemProp='image'
           content='https://clientfilingindia.com/cover.jpg'
         />
         {/* Open Graph general (Facebook, Pinterest & Google+) */}
