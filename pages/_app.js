@@ -54,10 +54,6 @@ export default function MyApp({ Component, pageProps, children }) {
         <meta name='geo.position' content='22.545412;88.356775' />
         <meta name='ICBM' content='22.545412, 88.356775' />
         <meta name='copyright' content='Clientfilingindia' />
-        <meta
-          name='p:domain_verify'
-          content='fa608db2ee7936f92d553f1d58bc16e4'
-        />
         <meta name='format-detection' content='telephone=no' />
         <link rel='canonical' href='https://www.clientfilingindia.com/' />
         <link rel='manifest' href='/manifest.json' />
