@@ -12,9 +12,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>
-          Company Registration, Income Tax, GST, Compliances, Payroll
-        </title>
+        <title>ClientFilingIndia | Business Consultants in Kolkata</title>
       </Head>
       <HeaderComponent />
       <BannerComponent

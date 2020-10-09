@@ -17,7 +17,7 @@ const PrivateCompliancesPage = () => {
         head='Compliances For Partnership Firm, Society, Trust, NGO'
         btn='Register now'
         img={model}
-        tagline='Get your Annual Compliances registered under Partnership Firm @₹ 23,600/-'
+        tagline='Get your annual compliances registered under partnership firm at Rs 23,600/-'
         services={services}
       />
       <div className='container'>

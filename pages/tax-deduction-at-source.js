@@ -18,7 +18,7 @@ const TdsPage = () => {
         btn='Register now'
         img={model}
         id='tds'
-        tagline='Get your TDS Filing @₹ 1,499/-'
+        tagline='Get your TDS filing at Rs 1,499/-'
         services={services}
       />
       <div className='container'>

@@ -19,7 +19,7 @@ const PfPage = () => {
         head='Provident Fund Registration'
         btn='Register now'
         img={model}
-        tagline='Get your Provident Fund filing @₹ 8,000/-'
+        tagline='Get your provident fund filing at Rs 8,000/-'
         services={services}
       />
       <div className='container'>

@@ -19,7 +19,7 @@ const ItrFivePage = () => {
         btn='Register now'
         img={model}
         id='itr'
-        tagline='Get your ITR-5 filing @₹ 3,000/-'
+        tagline='Get your ITR-5 filing at Rs 3,000/-'
         services={services}
       />
       <div className='container'>

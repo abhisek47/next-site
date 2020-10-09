@@ -17,7 +17,7 @@ const PrivateCompliancesPage = () => {
         head='Compliances For Private Company'
         btn='Register now'
         img={model}
-        tagline='Get your Annual Compliances registered under Private Company @₹ 20,000/-'
+        tagline='Get your annual compliances registered under private company at Rs 20,000/-'
         services={services}
       />
       <div className='container'>

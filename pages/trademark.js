@@ -19,7 +19,7 @@ const ItrThreePage = () => {
         btn='Register now'
         img={model}
         id='trademark'
-        tagline='Get your Trademark registered @₹ 6,490/-'
+        tagline='Get your trademark registered at Rs 6,490/-'
         services={services}
       />
       <div className='container'>

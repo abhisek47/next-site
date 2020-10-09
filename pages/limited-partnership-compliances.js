@@ -17,7 +17,7 @@ const PrivateCompliancesPage = () => {
         head='Compliances For Limited Liability Partnership'
         btn='Register now'
         img={model}
-        tagline='Get your Annual LLP registered  @₹ 18,000/-'
+        tagline='Get your annual LLP registered at Rs 18,000/-'
         services={services}
       />
       <div className='container'>

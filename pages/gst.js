@@ -19,7 +19,7 @@ const GstPage = () => {
         btn='Register now'
         img={model}
         id='gst'
-        tagline='Get your company registered under GST @₹ 1,000/-'
+        tagline='Get your company registered under GST at Rs 1,000/-'
         services={services}
       />
       <div className='container'>

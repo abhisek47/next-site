@@ -18,7 +18,7 @@ const EsiReturnPage = () => {
         head='ESI Return Filing'
         btn='Register now'
         img={model}
-        tagline='Get your ESI Return filing @₹ 6,779/-'
+        tagline='Get your ESI return filing at Rs 6,779/-'
         services={services}
       />
       <div className='container'>

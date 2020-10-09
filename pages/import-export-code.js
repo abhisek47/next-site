@@ -18,7 +18,7 @@ const ImportExportPage = () => {
         head='Import Export Code Registration'
         btn='Register now'
         img={model}
-        tagline='Get your Import Export Code registered @₹ 3,500 excluding GST'
+        tagline='Get your import export code registered at Rs 3,500/-'
         services={services}
       />
       <div className='container'>

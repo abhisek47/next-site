@@ -18,7 +18,7 @@ const LlpPage = () => {
         btn='Register now'
         img={model}
         id='llp'
-        tagline='Get your LLP registered  @₹ 11,800/-'
+        tagline='Get your LLP registered at Rs 11,800/-'
         services={services}
       />
       <div className='container'>
