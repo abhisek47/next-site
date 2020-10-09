@@ -30,6 +30,10 @@ module.exports = {
   webpack: (config, { isServer }) => {
     if (isServer) {
       require('./pages/scripts/generate-sitemap');
+    } else {
+      config.node = {
+        fs: 'empty',
+      };
     }
 
     return config;
