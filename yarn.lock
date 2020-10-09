@@ -1088,6 +1088,11 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@corex/deepmerge@^2.4.6":
+  version "2.4.14"
+  resolved "https://registry.yarnpkg.com/@corex/deepmerge/-/deepmerge-2.4.14.tgz#e673056e4512036c2a8277407798089a32c9cd6a"
+  integrity sha512-kjNIKt5zCoO0M4ArjFlU8cxx+7Yyx9nq3H6dMngnZxQ12Gh/9cUz4kXRkWrwNjp5vtlls2A8Qsi1onrj5OqTgA==
+
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
@@ -4966,6 +4971,13 @@ next-pwa@^3.1.5:
     globby "^11.0.1"
     workbox-webpack-plugin "^5.1.4"
     workbox-window "^5.1.4"
+
+next-sitemap@^1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-1.2.6.tgz#27698b50042152c7cbf12f1806aceede2a862b43"
+  integrity sha512-u3BU1VTfkjXBWhX5iXoil/9M3Nbo4GZ7U8P9LgNm1z0fnIsAEH6pTCpk2C4XXZG3Ajrw1lamIXtT18jPlWEeiw==
+  dependencies:
+    "@corex/deepmerge" "^2.4.6"
 
 next-tick@~1.0.0:
   version "1.0.0"

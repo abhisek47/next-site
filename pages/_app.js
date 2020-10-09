@@ -120,6 +120,10 @@ export default function MyApp({ Component, pageProps, children }) {
           type='application/ld+json'
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
+        <script
+          src='//code.tidio.co/arbcrwkok2q40m1i4vkie88rvgnn9dxr.js'
+          async
+        />
       </Head>
       <LoginContext.Provider value={[login, setLogin]}>
         <ScrollToTop />

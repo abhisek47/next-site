@@ -5,7 +5,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "prod": "next export"
+    "prod": "next export",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@ant-design/icons": "4.2.1",
@@ -40,6 +41,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "globby": "^11.0.1"
+    "globby": "^11.0.1",
+    "next-sitemap": "^1.2.6"
   }
 }
