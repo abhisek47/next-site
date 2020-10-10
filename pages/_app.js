@@ -49,6 +49,7 @@ export default function MyApp({ Component, pageProps, children }) {
           content='Annual Compliance For Private Limited Company'
         />
         <meta name='keywords' content='Business Consultant in Kolkata' />
+        <meta name="p:domain_verify" content="4d6386eacb0e9c2891aaf61602ed3283"/>
         <meta name='geo.region' content='IN-WB' />
         <meta name='geo.placename' content='Kolkata' />
         <meta name='geo.position' content='22.545412;88.356775' />
