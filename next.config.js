@@ -27,5 +27,15 @@ module.exports = withWorkbox({
   // ... other Next.js config values
 });
 
+module.exports = {
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      require('./scripts/generate-sitemap');
+    }
+
+    return config;
+  }
+};
+
 const withImages = require('next-images');
 module.exports = withImages({});

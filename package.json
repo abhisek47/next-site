@@ -17,7 +17,6 @@
     "dayjs": "1.8.28",
     "esm": "^3.2.25",
     "firebase": "^7.22.1",
-    "globby": "^11.0.1",
     "next": "latest",
     "next-images": "^1.6.0",
     "next-pwa": "^3.1.5",
@@ -41,6 +40,6 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "next-sitemap": "^1.2.6"
+    "globby": "^11.0.1"
   }
 }
