@@ -1,6 +1,6 @@
-import fs from 'fs'
-import globby from 'globby'
-import prettier from 'prettier'
+const fs = require('fs');
+const globby = require('globby');
+const prettier = require('prettier');
 
 (async () => {
   const prettierConfig = await prettier.resolveConfig('./.prettierrc.js');
@@ -24,7 +24,7 @@ import prettier from 'prettier'
 
                 return `
                         <url>
-                            <loc>${`https://clientfilingindia.com${route}`}</loc>
+                            <loc>${`https://next-site-lilac.vercel.app${route}`}</loc>
                         </url>
                     `;
               })
